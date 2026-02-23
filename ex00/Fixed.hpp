@@ -1,8 +1,10 @@
-
+#ifndef FIXED_HPP
+#define FIXED_HPP
 
 class Fixed
 {
 private:
+    static const int fractionalBits;
     int fpn;
 
 public:
@@ -15,3 +17,5 @@ public:
 
     Fixed &operator=(const Fixed &other);
 };
+
+#endif
